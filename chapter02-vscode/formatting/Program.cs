@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        int numberOfApples = 32; 
+        int numberOfApples = 32;
         decimal pricePerApple = 0.35M;
 
-        Console.WriteLine(
+        WriteLine(
             format: "{0} apples cost {1:C}",
             arg0: numberOfApples,
             arg1: pricePerApple * numberOfApples);
@@ -19,18 +19,55 @@ class Program
         //WriteToFile(Formatted); // would write string to a file
 
         // Three parameter values can use named arguments.
-        Console.WriteLine("{0} {1} lived in {2}.",
+        WriteLine("{0} {1} lived in {2}.",
         arg0: "Roger", arg1: "Cevung", arg2: "Stockholm");
-        
+
         // Four or more parameter values cannot use named arguments.
-        Console.WriteLine("{0} {1} lived in {2} and worked in the {3} team at {4}.",
+        WriteLine("{0} {1} lived in {2} and worked in the {3} team at {4}.",
         "Roger", "Cevung", "Stockholm", "Education", "Optimizely");
 
+
+        // Formatting using interpolated strings
         // The following statement must be all on one line when using C# 10 
         // or earlier. If using C# 11 or later, we can include a line break
         // in the middle of an expression but not in the string text.
-        Console.WriteLine($"{numberOfApples} apples cost {pricePerApple * 
+        WriteLine($"{numberOfApples} apples cost {pricePerApple *
         numberOfApples:C}");
-        
+
+
+        // Understanding format strings
+        string applesText = "Apples";
+        int applesCount = 1234;
+        string bananasText = "Bananas";
+        int bananasCount = 56789;
+
+        WriteLine();
+
+        WriteLine(format: "{0, -10} {1,6}",
+            arg0: "Name", arg1: "Count");
+
+        WriteLine(format: "{0, -10} {1,6:N0}",
+            arg0: applesText, arg1: applesCount);
+
+        WriteLine(format: "{0, -10} {1,6:N0}",
+            arg0: bananasText, arg1: bananasCount);
+
+
+        // Getting text input from the user
+        Write("Type your first name andpress ENTER: ");
+        string? firstName = ReadLine();
+
+        Write("Type your age and press ENTER: ");
+        string age = ReadLine()!;
+
+        WriteLine($"Hello, {firstName}, you look good for {age}.");
+
+
+        // Getting key input from the user
+        Write("Press any key combination: ");
+        ConsoleKeyInfo key = ReadKey();
+        WriteLine();
+        WriteLine("Key: {0}, Char: {1}, Modifiers: {2}",
+            arg0: key.Key, arg1: key.KeyChar, arg2: key.Modifiers);
     }
 }

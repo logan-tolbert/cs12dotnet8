@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vocabulary", "vocabulary\vocabulary.csproj", "{0C141477-6A9F-4867-AFB5-C40206CA9246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vocabulary", "vocabulary\vocabulary.csproj", "{0C141477-6A9F-4867-AFB5-C40206CA9246}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "variables", "variables\variables.csproj", "{0F4F8C90-9E71-4CBA-A8EC-36D254E96A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "variables", "variables\variables.csproj", "{0F4F8C90-9E71-4CBA-A8EC-36D254E96A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "formatting", "formatting\formatting.csproj", "{13E74457-5604-4A82-B0C7-BADF6EF8D69B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "formatting", "formatting\formatting.csproj", "{13E74457-5604-4A82-B0C7-BADF6EF8D69B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "numbers", "numbers\numbers.csproj", "{C5A56BA5-300E-427C-A5BA-6958483786BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "numbers", "numbers\numbers.csproj", "{C5A56BA5-300E-427C-A5BA-6958483786BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arguments", "arguments\arguments.csproj", "{34608D98-A126-4E2E-8ABF-33EAE343E8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asyncConsole", "asyncConsole\asyncConsole.csproj", "{7CDB87DC-D4F2-4EAD-B8BE-A632A9C39BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +37,19 @@ Global
 		{C5A56BA5-300E-427C-A5BA-6958483786BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A56BA5-300E-427C-A5BA-6958483786BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A56BA5-300E-427C-A5BA-6958483786BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34608D98-A126-4E2E-8ABF-33EAE343E8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34608D98-A126-4E2E-8ABF-33EAE343E8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34608D98-A126-4E2E-8ABF-33EAE343E8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34608D98-A126-4E2E-8ABF-33EAE343E8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDB87DC-D4F2-4EAD-B8BE-A632A9C39BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDB87DC-D4F2-4EAD-B8BE-A632A9C39BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDB87DC-D4F2-4EAD-B8BE-A632A9C39BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDB87DC-D4F2-4EAD-B8BE-A632A9C39BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0651274-CC2D-4BC9-B362-0675C43D8F99}
 	EndGlobalSection
 EndGlobal

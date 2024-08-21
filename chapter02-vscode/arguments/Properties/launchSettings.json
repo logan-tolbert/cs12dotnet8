@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "arguments": {
+      "commandName": "Project",
+      "commandLineArgs": "red yellow 50"
+    }
+  }
+}
