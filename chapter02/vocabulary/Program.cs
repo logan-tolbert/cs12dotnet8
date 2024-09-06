@@ -8,7 +8,10 @@ namespace vocabulary
     {
         static void Main(string[] args)
         {
+            #region Showing the compiler version
             // #error version
+            #endregion
+            
             // Console.WriteLine($"Computer named {Env.MachineName} says \"No.\"");
 
             
